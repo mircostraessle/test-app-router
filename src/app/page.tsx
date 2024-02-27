@@ -1,6 +1,8 @@
 import { Suspense } from 'react';
 import { SlowComponent } from './slow-component';
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
   await new Promise((resolve) => setTimeout(resolve, 2000));
 
